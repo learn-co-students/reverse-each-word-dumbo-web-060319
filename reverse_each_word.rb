@@ -4,7 +4,7 @@ def reverse_each_word(sentence)
     sen_arr = sentence.split(" ")
 
     # iterate through them
-    sen_arr.each do |word|
+    sen_arr.collect do |word|
         # reverse each word
         word.reverse!
     end
